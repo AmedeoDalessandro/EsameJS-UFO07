@@ -19,9 +19,16 @@
             </form>
         </section>
         <section id="weather-result">
-            <!-- Qui verranno mostrate le informazioni meteo -->
+            <div id="weather"></div>
         </section>
     </main>
     <script src="app.js"></script>
+    <script>
+        // Collega la funzione getWeather al submit del form
+        document.getElementById('weather-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            getWeather();
+        });
+    </script>
 </body>
 </html>
