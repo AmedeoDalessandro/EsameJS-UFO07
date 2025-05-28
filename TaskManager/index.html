@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css"><!-- opzionale, per lo stile -->
 </head>
 <body>
-    
+    <header>
+        <h1>Gestione Attività</h1>
+    </header>
+    <main>
+        <section id="add-task">
+            <h2>Aggiungi Nuova Attività</h2>
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="Titolo attività" required>
+                <input type="date" id="task-date" required>
+                <button type="submit">Aggiungi</button>
+            </form>
+        </section>
+        <section id="task-list">
+            <h2>Le tue Attività</h2>
+            <ul id="tasks">
+                <!-- Le attività verranno aggiunte qui dinamicamente -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
